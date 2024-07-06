@@ -24,27 +24,25 @@
         <p class="card-text">Pizza de muzzarella grande o familiar, separada en 8 porciones.
             Precio por unidad: $10.000
         </p>
-        <a id= "btn1A"  class="btn btn-primary">Comprar</a>
+        <div>
+            <button id="btn-pizza"  class="btn btn-primary"     >COMPRAR NOW</button>
         </div>
-        <a id= "btn1B"  class="btn btn-primary">Eliminar</a>
-        </div>
-
+        
+        
     </div>
     <div class="card2" style="width:400px">
-        <img class="card-img-top" src="Imagenes/Empanadas de Carne.jpg" alt="Card image">
+        <img class="card-img-top" src="Imagenes/Milanesa.jpg" alt="Card image">
         <div class="card-body">
-        <h4 class="card-title">EMPANADAS DE CARNE</h4>
-        <p class="card-text">Empanadas al horno o freidas.
-            Precio por unidad: $1.000
+        <h4 class="card-title">MILANESA</h4>
+        <p class="card-text">Milanesa de carne o pollo, acompañada por ensalada de arroz o papasfritas.
+            Precio por unidad: $5.000
         </p>
-        <a id= "btn2A"  class="btn btn-primary">Comprar</a>
+        <div>
+            <button id="btn-milanesa"  class="btn btn-primary"     >COMPRAR NOW</button>
         </div>
-        <a id= "btn2B"  class="btn btn-primary">Eliminar</a>
-        </div>
+        
 
     </div>
-
-
     <div class="card3" style="width:400px">
         <img class="card-img-top" src="Imagenes/Hambueguesa.jpeg" alt="Card image">
         <div class="card-body">
@@ -52,26 +50,54 @@
         <p class="card-text">Hamburguesa de carne, lechuga, tomate, queso, cebolla y pepinos.Con los aderezos: ketchup, mostaza y mayonesa.
             Precio por unidad: $7.000
         </p>
-        <a id= "btn3A" class="btn btn-primary">Comprar</a>
+        <div>
+            <button id="btn-hamburguesa"  class="btn btn-primary"     >COMPRAR NOW</button>
         </div>
-        <a id= "btn3B"  class="btn btn-primary">Eliminar</a>
-        </div>
+        
     </div>
-
     <div class="card4" style="width:400px">
+        <img class="card-img-top" src="Imagenes/Empanadas de Carne.jpg" alt="Card image">
+        <div class="card-body">
+        <h4 class="card-title">EMPANADAS</h4>
+        <p class="card-text">Empanada de carne o pollo frita o al horno.
+            Precio por unidad: $1.000
+        </p>
+        <div>
+            <button id="btn-empanadas"  class="btn btn-primary"     >COMPRAR NOW</button>
+        </div>
+    
+    </div>
+    <div class="card5" style="width:400px">
         <img class="card-img-top" src="Imagenes/conos de helado.jpg" alt="Card image">
         <div class="card-body">
         <h4 class="card-title">CONO DE HELADO</h4>
         <p class="card-text">Cono de helado de Chocolate, Vainilla, Dulce de Leche y Frutilla. Con salsa de Chocolate, Dulce de leche o Frutilla.
             Precio por unidad: $1.000
         </p>
-        <a  id="btn4A"class="btn btn-primary">Comprar</a>
-        </div>
-        <a id= "btn4B"  class="btn btn-primary">Eliminar</a>
+        <div>
+            <button id="btn-helado"  class="btn btn-primary"     >COMPRAR NOW</button>
         </div>
     </div>
-
-
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>nombre</th>
+                    <th>precio</th>
+                    <th>borrar producto</th>
+                </tr>
+            </thead>
+            <tbody id="contenedor">
+                <!-- contenedor carrito -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total a pagar</td>
+                    <td id="precioTotal">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
     <script src="main.js"></script>
     <script src="storage.js"></script>
     

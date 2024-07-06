@@ -1,5 +1,5 @@
 //////Array de menu 
-const menu = [
+const menuD = [
 { id: 0,  nombre: "Pizza", precio: 10000 },
 { id: 1,  nombre: "Milanesa", precio: 5000 },
 { id: 2,  nombre: "Hamburguesa", precio: 7000 },
@@ -7,16 +7,16 @@ const menu = [
 
 ];
 console.log("ESTE ES NUESTRO STOCK DE MENÚ Y POSTRE DISPONIBLE")
-const getMenu= (dataMenu) =>{
+const getMenu= (dataMenuD) =>{
     return new Promise((resolve, reject)=> {
         setTimeout(()=>{
-            resolve(dataMenu);
+            resolve(dataMenuD);
         },3000);
     });
 };
-getMenu(menu)
+getMenu(menuD)
 
-.then((dataMenu)=> console.log(dataMenu))
+.then((dataMenuD)=> console.log(dataMenuD))
 .catch((error)=>console.error(error))
 .finally(()=>console.log ("Fin del listado de menú disponible!"))
 
